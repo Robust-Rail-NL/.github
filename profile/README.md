@@ -30,7 +30,7 @@ git clone git@github.com:Robust-Rail-NL/robust-rail-evaluator.git
 ```
 If **Dev-Container is already installed**: 
 * Open the project folder in VS Code.
-* `Ctrl+Shif+P` → Dev Containers: Rebuild Container (it can take a few minutes) - this command will use the [Dockerfile](https://github.com/Robust-Rail-NL/.devcontainer/Dockerfile) and [devcontainer.json](https://github.com/Robust-Rail-NL/.devcontainer/devcontainer.json) definitions under [.devcontainer](https://github.com/Robust-Rail-NL/.devcontainer).
+* `Ctrl+Shif+P` → Dev Containers: Rebuild Container (it can take a few minutes) - this command will use the [Dockerfile](https://github.com/Robust-Rail-NL/.devcontainer/blob/main/Dockerfile) and [devcontainer.json](https://github.com/Robust-Rail-NL/.devcontainer/blob/main/devcontainer.json) definitions under [.devcontainer](https://github.com/Robust-Rail-NL/.devcontainer).
 
 
 
