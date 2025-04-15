@@ -33,6 +33,11 @@ If **Dev-Container is already installed**:
 * `Ctrl+Shif+P` → Dev Containers: Rebuild Container (it can take a few minutes) - this command will use the [Dockerfile](https://github.com/Robust-Rail-NL/.devcontainer/blob/main/Dockerfile) and [devcontainer.json](https://github.com/Robust-Rail-NL/.devcontainer/blob/main/devcontainer.json) definitions under [.devcontainer](https://github.com/Robust-Rail-NL/.devcontainer).
 
 
+## Build process of robust-rail-tools: 
+* [robust-rail-evaluator](https://github.com/Robust-Rail-NL/robust-rail-evaluator)
+* [robust-rail-solver](https://github.com/Robust-Rail-NL/robust-rail-solver)
+* [robust-rail-generator](https://github.com/Robust-Rail-NL/robust-rail-generator)
+
 
 ## Dev-Container setup (Installed yet) - and Open Project in VS Docker environment 
 The usage of **[Dev-Container](https://code.visualstudio.com/docs/devcontainers/tutorial)** is highly recommended in macOS environment. Running **VS Code** inside a Docker container is useful, since it allows compiling and running tools without platform dependencies. In addition, **Dev-Container** allows to an easy to use dockerized development since the code base can be modified real-time in a docker environment via **VS Code**.
@@ -45,14 +50,14 @@ The usage of **[Dev-Container](https://code.visualstudio.com/docs/devcontainers/
 
 * 4th - `Ctrl+Shif+P` → Dev Containers: Rebuild Container (it can take a few minutes) - this command will use the [Dockerfile](https://github.com/Robust-Rail-NL/.devcontainer/blob/main/Dockerfile) and [devcontainer.json](https://github.com/Robust-Rail-NL/.devcontainer/blob/main/devcontainer.json) definitions unde [.devcontainer](https://github.com/Robust-Rail-NL/.devcontainer).
 
-* 5th - Build process of the 
-    * [robust-rail-evaluator](https://github.com/Robust-Rail-NL/robust-rail-evaluator)
-    * [robust-rail-solver](https://github.com/Robust-Rail-NL/robust-rail-solver)
-    * [robust-rail-generator](https://github.com/Robust-Rail-NL/robust-rail-generator)
-
 Note: all the dependencies are already contained by the Docker instance. 
 
 **Building the Dockerfile might take a few minutes (~10 minutes)**.
+
+Next step is the building and usage of the tools. The description of the building and usage of tools are at:
+* [robust-rail-evaluator](https://github.com/Robust-Rail-NL/robust-rail-evaluator)
+* [robust-rail-solver](https://github.com/Robust-Rail-NL/robust-rail-solver)
+* [robust-rail-generator](https://github.com/Robust-Rail-NL/robust-rail-generator)
 
 ## Speed up Docker build - (Linux only)
 Linux users can speed up the build process. Open [Dockerfile](./Dockerfile): modify `FROM --platform=linux/amd64 ubuntu:20.04` to `FROM ubuntu:20.04`. 
