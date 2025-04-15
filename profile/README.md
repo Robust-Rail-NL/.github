@@ -35,7 +35,7 @@ If **Dev-Container is already installed**:
 
 
 ## Dev-Container setup (Installed yet) - and Open Project in VS Docker environment 
-The usage of **[Dev-Container](https://code.visualstudio.com/docs/devcontainers/tutorial)** is highly recommended in macOS environment. Running **VS Code** inside a Docker container is useful, since it allows compiling and use cTORS without platform dependencies. In addition, **Dev-Container** allows to an easy to use dockerized development since the mounted `ctors` code base can be modified real-time in a docker environment via **VS Code**.
+The usage of **[Dev-Container](https://code.visualstudio.com/docs/devcontainers/tutorial)** is highly recommended in macOS environment. Running **VS Code** inside a Docker container is useful, since it allows compiling and running tools without platform dependencies. In addition, **Dev-Container** allows to an easy to use dockerized development since the code base can be modified real-time in a docker environment via **VS Code**.
 
 * 1st - Install **Docker**
 
@@ -43,7 +43,7 @@ The usage of **[Dev-Container](https://code.visualstudio.com/docs/devcontainers/
 
 * 3rd - Open the project in **VS Code**
 
-* 4th - `Ctrl+Shif+P` → Dev Containers: Rebuild Container (it can take a few minutes) - this command will use the [Dockerfile](.devcontainer/Dockerfile) and [devcontainer.json](.devcontainer/devcontainer.json) definitions unde [.devcontainer](.devcontainer).
+* 4th - `Ctrl+Shif+P` → Dev Containers: Rebuild Container (it can take a few minutes) - this command will use the [Dockerfile](https://github.com/Robust-Rail-NL/.devcontainer/blob/main/Dockerfile) and [devcontainer.json](https://github.com/Robust-Rail-NL/.devcontainer/blob/main/devcontainer.json) definitions unde [.devcontainer](https://github.com/Robust-Rail-NL/.devcontainer).
 
 * 5th - Build process of the 
     * [robust-rail-evaluator](https://github.com/Robust-Rail-NL/robust-rail-evaluator)
