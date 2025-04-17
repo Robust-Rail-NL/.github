@@ -39,7 +39,7 @@ If **Dev-Container is already installed**:
 * [robust-rail-generator](https://github.com/Robust-Rail-NL/robust-rail-generator)
 
 
-## Dev-Container setup (Installed yet) - and Open Project in VS Docker environment 
+## Dev-Container setup (if not installed yet) - and Open Project in VS Docker environment 
 The usage of **[Dev-Container](https://code.visualstudio.com/docs/devcontainers/tutorial)** is highly recommended in macOS environment. Running **VS Code** inside a Docker container is useful, since it allows compiling and running tools without platform dependencies. In addition, **Dev-Container** allows to an easy to use dockerized development since the code base can be modified real-time in a docker environment via **VS Code**.
 
 * 1st - Install **Docker**
@@ -63,5 +63,39 @@ Next step is the building and usage of the tools. The description of the buildin
 Linux users can speed up the build process. Open [Dockerfile](./Dockerfile): modify `FROM --platform=linux/amd64 ubuntu:20.04` to `FROM ubuntu:20.04`. 
 The `--platform=linux/amd64` has been added because new macOS versions did not support the installation of .NET-8 tools, without this specific flag. 
 
+
+## How to Use ? 
+
+All tools can be used separately. However, a typical process would be as follows:
+
+1) Generate a scenario with [**robust-rail-generator**](https://github.com/Robust-Rail-NL/robust-rail-generator)
+    * *Input*:
+        * Location file
+        * Configuration for custom scenario, or random scenario generation
+
+    * *Output*:
+        * Scenario file compatible with **robust-rail-solver**
+        * Location file compatible with **robust-rail-solver**
+        * Scenario file compatible with **robust-rail-evaluator**
+
+2) Test the correctness of the scenario and location files with the **robust-rail-evaluator** - [CompatibilityTest.cpp](https://github.com/Robust-Rail-NL/robust-rail-evaluator/blob/main/cTORSTest/CompatibilityTest.cpp)
+    *  *Input*: 
+        * Location, Scenario, Plan (provide empty-path)
+
+    * *Output*:
+        * Tells if the Location is correct and the Scenario does not show absurd errors related to first actions
+
+3) Create a schedule plan with the [**robust-rail-solver**](https://github.com/Robust-Rail-NL/robust-rail-solver)
+    * *Input*:
+        * Scenario and Location file compatible with **robust-rail-solver**
+    * *Output*:
+        * Plan file (scheduled plan with all the actions)
+
+4) Evaluate plan with [**robust-rail-evaluator**](https://github.com/Robust-Rail-NL/robust-rail-evaluator)
+     *  *Input*: 
+        * Location, Scenario, Plan
+
+    * *Output*:
+        * Tells if the Plan is valid
 
 
