@@ -66,10 +66,16 @@ All tools can be used separately. However, a typical process would be as follows
 ## Valid scenarios, locations, and plan data 
 The repository [**robust-rail-general**](https://github.com/Robust-Rail-NL/robust-rail-general) stores the configurations, scenarios, locations, plans, and evaluation results.
 
+# Demo
+
+
+https://github.com/user-attachments/assets/d63786d1-9b3e-4a14-89cc-5536ee5b6fa2
+
+
 # Contributors
 To cite, please use:
-
-   Issa Hanou, Léon Planken, Tycho Grapendaal, Pruthav Sanwatsarkar, Mayte Steeghs, and Mathijs Weerdt. (2026). **Robust-Rail**: An Open-Source Platform for Generating, Solving, and Evaluating the Train Unit Shunting Problem with Service Scheduling. In _The 38th Benelux Conference on Artificial Intelligence and the 35th Belgian Dutch Conference on Machine Learning_, Demonstrations Track. https://openreview.net/forum?id=EeAqJOHHfN
+   
+      Issa Hanou, Léon Planken, Tycho Grapendaal, Pruthav Sanwatsarkar, Mayte Steeghs, and Mathijs Weerdt. (2026). **Robust-Rail**: An Open-Source Platform for Generating, Solving, and Evaluating the Train Unit Shunting Problem with Service Scheduling. In The 38th Benelux Conference on Artificial Intelligence and the 35th Belgian Dutch Conference on Machine Learning, Demonstrations Track. https://openreview.net/forum?id=EeAqJOHHfN
 
 - [robust-rail-general](https://github.com/Robust-Rail-NL/robust-rail-general)
    - [Issa Hanou](https://github.com/IssaHanou/)
